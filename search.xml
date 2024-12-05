@@ -4,6 +4,68 @@
   
     
     <entry>
+      <title>ubuntu 手动修改home下中英文显示[resolved]</title>
+      <link href="/2024/12/05/ubuntu%E6%89%8B%E5%8A%A8%E4%BF%AE%E6%94%B9home%E4%B8%8B%E4%B8%AD%E8%8B%B1%E6%96%87%E6%98%BE%E7%A4%BA/"/>
+      <url>/2024/12/05/ubuntu%E6%89%8B%E5%8A%A8%E4%BF%AE%E6%94%B9home%E4%B8%8B%E4%B8%AD%E8%8B%B1%E6%96%87%E6%98%BE%E7%A4%BA/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.config/user-dirs.locale</span><br></pre></td></tr></table></figure><p>打开后会发现文件内容即为当前系统的语言支持。<br>改为目标语言即可：<br>zh_CN对应中文<br>zh_en对应英文</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> config </tag>
+            
+            <tag> desktop </tag>
+            
+            <tag> resolved </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ubuntu 桌面文件夹意外删除[resolved]</title>
+      <link href="/2024/12/05/ubuntu%E6%A1%8C%E9%9D%A2%E9%93%BE%E6%8E%A5%E9%94%99%E8%AF%AF%E4%BF%AE%E5%A4%8D/"/>
+      <url>/2024/12/05/ubuntu%E6%A1%8C%E9%9D%A2%E9%93%BE%E6%8E%A5%E9%94%99%E8%AF%AF%E4%BF%AE%E5%A4%8D/</url>
+      
+        <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>因意外操作导致desktop文件夹被删除，ls命令查看&#x2F;home&#x2F;[username]&#x2F;desktop显示链接失效；与此同时，由于desktop文件夹的缺失ubuntu系统自动将&#x2F;home&#x2F;[username]的内容自动显示在桌面上。</p><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.config</span><br><span class="line">vim user-dirs.dirs</span><br></pre></td></tr></table></figure><p>根据文件内容，大致修改为以下内容，根据实际情况更改即可。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># This file is written by xdg-user-dirs-update</span><br><span class="line"># If you want to change or add directories, just edit the line you&#x27;re</span><br><span class="line"># interested in. All local changes will be retained on the next run.</span><br><span class="line"># Format is XDG_xxx_DIR=&quot;$HOME/yyy&quot;, where yyy is a shell-escaped</span><br><span class="line"># homedir-relative path, or XDG_xxx_DIR=&quot;/yyy&quot;, where /yyy is an</span><br><span class="line"># absolute path. No other format is supported.</span><br><span class="line"># </span><br><span class="line">XDG_DESKTOP_DIR=&quot;$HOME/Desktop&quot;</span><br><span class="line">XDG_DOWNLOAD_DIR=&quot;$HOME/Downloads&quot;</span><br><span class="line">XDG_TEMPLATES_DIR=&quot;$HOME/Templates&quot;</span><br><span class="line">XDG_PUBLICSHARE_DIR=&quot;$HOME/Public&quot;</span><br><span class="line">XDG_DOCUMENTS_DIR=&quot;$HOME/Documents&quot;</span><br><span class="line">XDG_MUSIC_DIR=&quot;$HOME/Music&quot;</span><br><span class="line">XDG_PICTURES_DIR=&quot;$HOME/Pictures&quot;</span><br><span class="line">XDG_VIDEOS_DIR=&quot;$HOME/Videos&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> config </tag>
+            
+            <tag> desktop </tag>
+            
+            <tag> resolved </tag>
+            
+            <tag> ubuntu </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Http协议之Content-Type</title>
       <link href="/2024/12/01/Http-content-type/"/>
       <url>/2024/12/01/Http-content-type/</url>
