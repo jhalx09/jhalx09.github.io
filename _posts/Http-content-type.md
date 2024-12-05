@@ -1,7 +1,9 @@
 ---
 title: Http协议之Content-Type
 date: 2024-12-01 16:42:11
-tags: http协议
+tags: 
+  - http
+categories: http/https协议
 ---
 ## HTTP content-type
 Content-Type（内容类型），一般是指网页中存在的 Content-Type，用于定义网络文件的类型和网页的编码，决定浏览器将以什么形式、什么编码读取这个文件，这就是经常看到一些 PHP 网页点击的结果却是下载一个文件或一张图片的原因。
@@ -38,7 +40,8 @@ application/x-www-form-urlencoded ： <form encType=””>中默认的encType�
 multipart/form-data ： 需要在表单中进行文件上传时，就需要使用该格式
 
 ## HTTP content-type 对照表
-文件扩展名	Content-Type(Mime-Type)	文件扩展名	Content-Type(Mime-Type)
+|--|--|--|--|
+|文件扩展名|Content-Type(Mime-Type)|文件扩展名|Content-Type(Mime-Type)|
 .*（ 二进制流，不知道下载文件类型）	application/octet-stream	.tif	image/tiff
 .001	application/x-001	.301	application/x-301
 .323	text/h323	.906	application/x-906
